@@ -1,37 +1,37 @@
-# 🌍 Tradutor Inteligente com IA (Trabalho da disciplina de Inteligência Artificial - AMF)
+# 🌍 Tradutor Inteligente com IA
 
-Este projeto foi desenvolvido como parte da disciplina de **Inteligência Artificial** do curso de **Sistemas de Informação da Faculdade Antonio Meneghetti (AMF)**. O objetivo é demonstrar a aplicação prática de IA no cotidiano por meio de uma solução que realiza **traduções automáticas** a partir de diferentes formatos de entrada.
+📘 Projeto da disciplina de Inteligência Artificial - AMF
 
-Para isso, o sistema utiliza a **API do Gemini**, uma poderosa ferramenta da Google de geração de conteúdo com IA, além de recursos de reconhecimento de texto e voz.
+Este projeto foi desenvolvido como parte da disciplina de **Inteligência Artificial** do curso de **Sistemas de Informação da Faculdade Antonio Meneghetti (AMF)**. O objetivo é demonstrar a aplicação prática de **Inteligência Artificial** no cotidiano, criando uma solução que realiza **traduções automáticas** a partir de diferentes formatos de entrada, como texto, arquivos, áudio e imagens.
+
+A aplicação utiliza a **API Gemini** da Google para tradução inteligente de conteúdo, além de integrar outras tecnologias, como o **Whisper** da OpenAI (para transcrição de áudio) e o **Pytesseract** (para extração de texto de imagens).
 
 ---
 
 ## 📚 Funcionalidades
 
-- 🔤 Tradução de texto digitado manualmente
-- 📄 Tradução de arquivos `.txt`
-- 🖼️ Extração de texto de imagens e tradução
-- 🔊 Transcrição de áudio e tradução do conteúdo
+- 🔤 Tradução de texto digitado manualmente  
+- 📄 Tradução de arquivos `.txt`  
+- 🖼️ Extração de texto de imagens e tradução  
+- 🔊 Transcrição de áudio e tradução do conteúdo  
 
 ---
 
-## 🧠 Inteligência Artificial utilizada
+## 🧠 Tecnologias e Inteligência Artificial Utilizadas
 
-O projeto usa a **API do Gemini** da Google para gerar traduções de forma inteligente. O modelo entende o contexto e fornece respostas em linguagem natural com alta precisão.
-
-Além disso, também são utilizadas:
-
-- **Whisper** da OpenAI: para transcrição de áudios em texto.
-- **Pytesseract**: para extração de texto de imagens via OCR.
+- **Gemini (Google Generative AI):** utilizado para gerar traduções inteligentes em linguagem natural.
+- **Whisper (OpenAI):** realiza a transcrição de áudio em texto.
+- **Pytesseract (OCR):** extrai texto de imagens.
 
 ---
 
-## 🔧 Bibliotecas necessárias
+## 🔧 Instalação das Dependências
 
-Execute os comandos abaixo para instalar as bibliotecas utilizadas:
+### 📦 Bibliotecas Python
 
 ```bash
 pip install google-generativeai
 pip install openai-whisper
 pip install pytesseract
-
+````
+Além disso, o projeto requer o FFmpeg para manipulação de arquivos de áudio.
