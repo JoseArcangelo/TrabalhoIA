@@ -2,16 +2,15 @@ import google.generativeai as genai
 import whisper
 import lerImagens
 
-API_KEY = ""  
+API_KEY = "AIzaSyDe3LBehyYrUmIVYneszduWT5lZvrBZJH4"  
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel('gemini-2.0-flash')
 chat = model.start_chat(history=[])
 
-
 def generate_prompt(prompt):
     idioma = input("Informe para qual idioma deseja traduzir: ")
-    return f"Você é um tradutor especializado. Traduza para o idioma {idioma} o texto {prompt}"  # Corrigido
+    return f"Você é um tradutor com a personalidade animada do Faustão. Apresente a tradução de forma clara e correta, sem gírias ou brincadeiras. Use seu estilo divertido apenas para introduzir a resposta, mas a tradução deve estar limpa e profissional, como se fosse entregue para um documento oficial. Traduza para o idioma {idioma} o texto {prompt}" 
 
 # Traduzindo texto normal
 def traduzirTexto(texto):
@@ -30,7 +29,7 @@ def traduzirArquivo(caminho):
     resposta = model.generate_content(
         contents=[
             {"role": "user", "parts": [
-                {"text": f"Você é um tradutor especializado. Traduza esse arquivo para o {idioma}:"},
+                {"text": f"Você é um tradutor com a personalidade animada do Faustão. Apresente a tradução de forma clara e correta, sem gírias ou brincadeiras. Use seu estilo divertido apenas para introduzir a resposta, mas a tradução deve estar limpa e profissional, como se fosse entregue para um documento oficial .Traduza esse arquivo para o {idioma}:"},
                 {"inline_data": {
                     "mime_type": "text/plain",  
                     "data": conteudo_arquivo
@@ -42,6 +41,7 @@ def traduzirArquivo(caminho):
     print("\n📝 Tradução do arquivo:\n")
     print(resposta.text)
 
+# extaindo texto de um audio e traduzindo
 def traduzirAudio(caminho):
     modelo = whisper.load_model("base")
     resposta = modelo.transcribe(caminho)
