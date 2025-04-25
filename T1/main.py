@@ -2,7 +2,7 @@ import google.generativeai as genai
 import whisper
 import lerImagens
 
-API_KEY = "AIzaSyDe3LBehyYrUmIVYneszduWT5lZvrBZJH4"  
+API_KEY = ""  
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel('gemini-2.0-flash')
