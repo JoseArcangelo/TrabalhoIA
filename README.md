@@ -31,8 +31,9 @@ A aplicação utiliza a **API Gemini** da Google para tradução inteligente de 
 
 ```bash
 pip install google-generativeai
-pip install openai-whisper
-pip install pytesseract
+pip install openai-whisper 
+pip install pytesseract 
 ````
-Além disso, o projeto requer o FFmpeg para manipulação de arquivos de áudio.
+- Além disso, o projeto requer o FFmpeg para manipulação de arquivos de áudio.
 https://ffmpeg.org/
+- Tive alguns problemas para rodar o tesseracrt então segui esse passo a passo: https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i. Também o tesseract por padrão vem com o pacote somente da lingua inglesa e se quiser instalar pacotes de outros idiomas é necessario instalar atraves do link: https://github.com/tesseract-ocr/tessdata e colar o pacote dentro da pasta tessdata da pasta tesseract-OCR.
