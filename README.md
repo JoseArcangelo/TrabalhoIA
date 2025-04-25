@@ -17,6 +17,10 @@ A aplicação utiliza a **API Gemini** da Google para tradução inteligente de 
 
 ---
 
+- **Autenticação:**
+  API Gemini (Google Generative AI) : 
+  A autenticação é feita por meio de uma **API Key** fornecida pelo Google. 
+
 ## 🧠 Tecnologias e Inteligência Artificial Utilizadas
 
 - **Gemini (Google Generative AI):** utilizado para gerar traduções inteligentes em linguagem natural.
