@@ -35,3 +35,4 @@ pip install openai-whisper
 pip install pytesseract
 ````
 Além disso, o projeto requer o FFmpeg para manipulação de arquivos de áudio.
+https://ffmpeg.org/
